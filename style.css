@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: wheat;
+    font-family: 'Play', sans-serif;
+}
+/* #EE6463 */
+
+ul{
+    list-style: none;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #697D5E;
+    /* background-image: url(./fundo.jpeg); */
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background: cover; 
+    /* background: linear-gradient(90deg,#0D0D0D,#FEEBD6); */
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+   /* border-bottom: 1px solid #EE6463;  */
+    box-shadow: 1px 1px 10px  1px #9CB190; 
+    /* border-bottom: 15px ridge #504E54;  */
+}
+
+h1{
+    padding-top: 50px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    padding: 5px;
+}
+
+header ul li a:hover{
+    color: #504E54;
+}
+
+header ul li a{
+    transition: 400ms;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 50px;
+}
+.container .name h5{
+    font-size: 23px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 25px ;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: #504E54;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    margin-top: 5px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+.form button:hover{
+    background-color: #EE6463;
+    color:wheat;
+}
