@@ -33,9 +33,11 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-   /* border-bottom: 1px solid #EE6463;  */
-    box-shadow: 1px 1px 10px  1px #9CB190; 
+    flex-wrap: wrap;
+  /*  border-bottom: 1px solid #EE6463;   */
+    box-shadow: 1px 0px 10px  0px #9CB190; 
     /* border-bottom: 15px ridge #504E54;  */
+
 }
 
 h1{
@@ -69,6 +71,30 @@ header ul li a{
     font-size: 23px;
 }
 
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5,start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }        
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display:block !important;
+}
+#animation{
+    transition: 300ms;
+}
+
 #about p {
     max-width: 600px;
     margin: 0 auto;
@@ -78,6 +104,7 @@ header ul li a{
     width: 40%;
     margin: 0 auto;
     padding: 25px ;
+    margin-top: 30px;
 }
 
 .form input {
@@ -102,4 +129,22 @@ header ul li a{
 .form button:hover{
     background-color: #EE6463;
     color:wheat;
+}
+
+@media only screen and (max-width:800px){
+    .form {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:480px){
+    .container .name h1{
+        font-size: 33px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
 }
